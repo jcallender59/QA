@@ -5,7 +5,7 @@ public class Moped extends Vehicle{
     private boolean gofasterstripes;
     private boolean speedlimiter;
 
-    public Car(int id, int enginesize, String colour, String vehiclemake, boolean gofasterstripes, boolean speedlimiter) {
+    public Moped (int id, int enginesize, String colour, String vehiclemake, boolean gofasterstripes, boolean speedlimiter) {
         super(id, enginesize, colour, vehiclemake);
         this.gofasterstripes = gofasterstripes;
         this.speedlimiter = speedlimiter;

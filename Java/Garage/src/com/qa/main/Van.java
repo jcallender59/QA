@@ -5,7 +5,7 @@ public class Van extends Vehicle{
     private boolean largeloadarea;
     private boolean slidingdoor;
 
-    public Car(int id, int enginesize, String colour, String vehiclemake, boolean largeloadarea, boolean slidingdoor) {
+    public Van(int id, int enginesize, String colour, String vehiclemake, boolean largeloadarea, boolean slidingdoor) {
         super(id, enginesize, colour, vehiclemake);
         this.largeloadarea = largeloadarea;
         this.slidingdoor = slidingdoor;

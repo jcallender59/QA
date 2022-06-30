@@ -45,7 +45,7 @@ public abstract class Vehicle {
         return vehiclemake;
     }
 
-    public void setVehiclemake(String vehiclemake) {
+    public void setvehiclemake(String vehiclemake) {
         this.vehiclemake = vehiclemake;
     }
 
