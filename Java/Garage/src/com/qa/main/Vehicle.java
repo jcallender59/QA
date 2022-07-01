@@ -7,7 +7,7 @@ public abstract class Vehicle {
     private String colour;
     private String vehiclemake;
 
-}
+
 
     public Vehicle(int id, int enginesize, String colour, String vehiclemake) {
         super();
@@ -51,8 +51,11 @@ public abstract class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehicle [id=" + id + ", wheels=" + wheels + ", enginesize=" + enginesize + ", colour=" + colour
+        return "Vehicle [id=" + id + ", enginesize=" + enginesize + ", colour=" + colour
                 + ", vehiclemake=" + vehiclemake + "]";
     }
 
     public abstract double calculateBill();
+
+}
+

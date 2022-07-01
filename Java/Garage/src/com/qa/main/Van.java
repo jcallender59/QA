@@ -14,14 +14,14 @@ public class Van extends Vehicle{
     public boolean getlargeloadarea() {
         return getlargeloadarea();
     }
-    public boolean setlargeloadarea(boolean largeloadarea) {
+    public void setlargeloadarea(boolean largeloadarea) {
         this.largeloadarea = largeloadarea;
     }
 
     public boolean getslidingdoor() {
         return getslidingdoor();
     }
-    public boolean setslidingdoor(boolean slidingdoor) {
+    public void setslidingdoor(boolean slidingdoor) {
         this.slidingdoor = slidingdoor;
     }
 

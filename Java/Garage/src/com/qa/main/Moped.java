@@ -11,17 +11,19 @@ public class Moped extends Vehicle{
         this.speedlimiter = speedlimiter;
     }
 
+
     public boolean getgofasterstripes() {
         return getgofasterstripes();
     }
-    public boolean setgofasterstripes(boolean gofasterstripes) {
+
+    public void setgofasterstripes(boolean gofasterstripes) {
         this.gofasterstripes = gofasterstripes;
     }
 
     public boolean getspeedlimiter() {
         return getspeedlimiter();
     }
-    public boolean setspeedlimiter(boolean speedlimiter) {
+    public void setspeedlimiter(boolean speedlimiter) {
         this.speedlimiter = speedlimiter;
     }
 

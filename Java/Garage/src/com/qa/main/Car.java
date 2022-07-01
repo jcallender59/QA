@@ -11,22 +11,23 @@ public class Car extends Vehicle{
         this.DieselEngine = DieselEngine;
     }
 
-    public boolean getSpoiler() {
-        return Spoiler;
-    }
-    public boolean setspoiler(boolean Spoiler) {
+    public void setspoiler(boolean Spoiler) {
         this.Spoiler = Spoiler;
     }
 
-    public boolean isDieselEngine() {
-
-        return DieselEngine;
+    public boolean getSpoiler() {
+        return Spoiler;
     }
 
     public void setDieselEngine(boolean DieselEngine) {
 
     this.DieselEngine = DieselEngine;
 
+    }
+
+    public boolean getDieselEngine() {
+
+        return DieselEngine;
     }
 
 

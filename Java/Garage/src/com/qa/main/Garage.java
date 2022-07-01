@@ -23,35 +23,39 @@ public class Garage {
     }
 
     public void emptyGarage() {
-        vehicles.clear()
-        System.out.println("All vehicles removed!"); ;
+        vehicles.clear();
+        System.out.println("All vehicles removed!");
+        ;
     }
+
     public void billAll() {
         for (Vehicle v : vehicles) {
             calculateBill(v);
         }
     }
 
+    
     int carCost = 1000;
     int mopedCost = 300;
     int vanCost = 500;
     int totalcost;
 
-    public void calculateBill() {
+    public void calculateBill(Vehicle v) {
 
         if (v instanceof Car) {
-            cost = (int) (carCost * v.getenginesize()); }
+            totalcost = (int) (carCost * v.getenginesize());
+        } else if (v instanceof Moped) {
+            totalcost = (int) (mopedCost * v.getenginesize());
+        } else if (v instanceof Van) {
+            totalcost = (int) (vanCost * v.getenginesize());
 
-        else if (v instanceof Moped) {
-            cost = (int) (mopedCost * v.getenginesize());
+        } else {
+            System.out.println("No Vehicle of this type exists");
+
+
         }
+    }
 
-        else if (v instanceof Van) {
-        cost = (int) (vanCost * v.getenginesize());
-
-    }  else {
-        System.out.println("No Vehicle of this type exists");
-
-
-
+    public void calculateBill() {
+    }
 }
